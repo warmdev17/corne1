@@ -39,22 +39,6 @@
         };
     };
 
-    macros {
-        select_print_clip: selection_print {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp PRINTSCREEN>;
-            label = "SELECTION_PRINT";
-        };
-
-        preview_print: preview_print {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp PRINTSCREEN>;
-            label = "PREVIEW_PRINT";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -111,10 +95,10 @@
 
         adjust {
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans    &trans  &trans              &trans          &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans  &select_print_clip  &preview_print  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans    &trans  &trans              &trans          &trans  &trans  &trans
-                                        &trans        &trans        &trans    &trans  &trans              &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans               &trans               &trans                   &trans               &trans                   &trans
+&trans      &kp F13       &kp F14       &kp F15       &kp F16       &trans    &kp RS(PRINTSCREEN)  &kp F17              &kp F18                  &kp F19              &kp F20                  &trans
+&trans      &trans        &trans        &trans        &trans        &trans    &kp LS(PRINTSCREEN)  &kp LA(PRINTSCREEN)  &kp LG(RS(PRINTSCREEN))  &kp LG(PRINTSCREEN)  &kp LA(LG(PRINTSCREEN))  &kp PRINTSCREEN
+                                        &trans        &trans        &trans    &trans               &trans               &trans
             >;
         };
     };
