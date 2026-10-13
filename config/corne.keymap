@@ -95,10 +95,10 @@
 
         adjust {
             bindings = <
-&kp LG(O)   &kp LG(N1)    &kp LG(N2)     &kp LG(N3)       &kp LG(N4)     &kp LG(N5)      &kp LG(NUMBER_6)     &kp LG(N7)               &kp LG(N8)               &kp LG(N9)             &kp LG(N0)               &kp LG(R)
-&kp LG(F)   &kp LG(E)     &kp LA(SPACE)  &kp LG(B)        &kp LG(ENTER)  &kp LG(Q)       &kp LG(T)            &kp LG(LEFT_BRACKET)     &tog 4                   &kp LG(RIGHT_BRACKET)  &kp F23                  &kp F24
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4    &kp LS(PRINTSCREEN)  &kp LA(LS(PRINTSCREEN))  &kp LS(LG(PRINTSCREEN))  &kp LG(PRINTSCREEN)    &kp LA(LG(PRINTSCREEN))  &kp PRINTSCREEN
-                                         &kp RIGHT_SHIFT  &trans         &trans          &trans               &trans                   &kp RIGHT_SHIFT
+&kp LG(O)   &kp LG(N1)    &kp LG(N2)     &kp LG(N3)       &kp LG(N4)     &kp LG(N5)      &kp LG(NUMBER_6)     &kp LG(N7)            &kp LG(N8)               &kp LG(N9)             &kp LG(N0)               &kp LG(R)
+&kp LG(F)   &kp LG(E)     &kp LA(SPACE)  &kp LG(B)        &kp LG(ENTER)  &kp LG(Q)       &kp LG(T)            &kp LG(LEFT_BRACKET)  &tog 4                   &kp LG(RIGHT_BRACKET)  &kp LG(C)                &kp LG(LS(C))
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4    &kp LS(PRINTSCREEN)  &kp LA(LS(P))         &kp LS(LG(PRINTSCREEN))  &kp LG(PRINTSCREEN)    &kp LA(LG(PRINTSCREEN))  &kp PRINTSCREEN
+                                         &kp RIGHT_SHIFT  &trans         &trans          &trans               &trans                &kp RIGHT_SHIFT
             >;
         };
 
@@ -113,10 +113,10 @@
 
         f-layer {
             bindings = <
-&kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18    &kp F19  &kp F20  &kp F21  &kp F22  &kp F23  &kp F24
-&trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans   &trans
-&trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans   &trans
-                           &trans   &trans   &trans     &trans   &trans   &trans
+&kp F13       &kp F14    &kp F15    &kp F16    &kp F17    &kp F18      &kp F19    &kp F20    &kp F21    &kp F22    &kp F23    &kp F24
+&kp KP_MINUS  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N4  &kp KP_N5    &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0  &kp KP_PLUS
+&trans        &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans
+                                    &trans     &trans     &trans       &trans     &trans     &trans
             >;
         };
     };
